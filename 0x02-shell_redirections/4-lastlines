@@ -1,2 +1,2 @@
-#!/binbash
-sed -n "1,10p" /etc/passwd | cat -n
+#!/bin/bash
+tail -10 /etc/passwd | cut -d: -f3
